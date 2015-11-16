@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-4U-mbh">
+                                <rect key="frame" x="20" y="564" width="167" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="c3x-V4-RVa"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Map"/>
+                                    <segment title="Hybrid"/>
+                                    <segment title="Sat"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setMapType:" destination="BYZ-38-t0r" eventType="valueChanged" id="lg0-EK-bbB"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xWw-OR-nNC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zeN-iM-ank"/>
+                                </connections>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-mc-GHk">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="9KJ-Ev-49j"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vfz-mc-GHk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="25" id="0Wu-Bi-Baz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xWw-OR-nNC" secondAttribute="trailing" constant="20" id="3d8-F4-bev"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-20" id="75Y-9q-Tx9"/>
+                            <constraint firstItem="8dt-4U-mbh" firstAttribute="top" secondItem="xWw-OR-nNC" secondAttribute="bottom" constant="8" id="9DM-Fk-L0v"/>
+                            <constraint firstItem="8dt-4U-mbh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="BnQ-rg-1zu"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="GXd-q3-0sC"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="GoI-T0-7hN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xWw-OR-nNC" secondAttribute="trailing" constant="-20" id="OMm-Hj-gdn"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="TTi-xk-VMD"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YUJ-uw-87v"/>
+                            <constraint firstItem="8dt-4U-mbh" firstAttribute="top" secondItem="xWw-OR-nNC" secondAttribute="bottom" constant="8" id="Zhj-M9-jpx"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e0w-fZ-2gC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xWw-OR-nNC" secondAttribute="trailing" constant="15" id="fc6-XB-5MI"/>
+                            <constraint firstItem="Vfz-mc-GHk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="fmy-js-t19"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xWw-OR-nNC" secondAttribute="trailing" constant="20" id="gLf-Wl-LHI"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="gfI-Oy-lIc"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iCW-ad-LFJ"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="sTy-uT-dSn"/>
+                            <constraint firstItem="Vfz-mc-GHk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="w2U-Qw-4tD"/>
+                            <constraint firstItem="Vfz-mc-GHk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="x3a-Ih-SDD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xWw-OR-nNC" secondAttribute="trailing" constant="-20" id="y43-en-kRZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8dt-4U-mbh" secondAttribute="bottom" constant="10" id="zJE-zM-JZ6"/>
+                            <constraint firstItem="xWw-OR-nNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="25" id="zVz-ib-06r"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fmy-js-t19"/>
+                                <exclude reference="x3a-Ih-SDD"/>
+                                <exclude reference="3d8-F4-bev"/>
+                                <exclude reference="75Y-9q-Tx9"/>
+                                <exclude reference="GXd-q3-0sC"/>
+                                <exclude reference="GoI-T0-7hN"/>
+                                <exclude reference="OMm-Hj-gdn"/>
+                                <exclude reference="TTi-xk-VMD"/>
+                                <exclude reference="e0w-fZ-2gC"/>
+                                <exclude reference="fc6-XB-5MI"/>
+                                <exclude reference="gLf-Wl-LHI"/>
+                                <exclude reference="gfI-Oy-lIc"/>
+                                <exclude reference="iCW-ad-LFJ"/>
+                                <exclude reference="zVz-ib-06r"/>
+                                <exclude reference="9DM-Fk-L0v"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapTypeSegmentControl" destination="8dt-4U-mbh" id="bKY-2J-w35"/>
+                        <outlet property="mapView" destination="xWw-OR-nNC" id="zUz-ci-Nyt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="277" height="49"/>
+    </resources>
+</document>
