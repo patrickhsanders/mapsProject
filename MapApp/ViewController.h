@@ -9,8 +9,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "WebViewController.h"
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
+@interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 
 
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA112B2F1BFB82D900A909E3 /* skull.png in Resources */ = {isa = PBXBuildFile; fileRef = AA112B2E1BFB82D900A909E3 /* skull.png */; settings = {ASSET_TAGS = (); }; };
+		AA112B311BFB8AA300A909E3 /* skull2.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA112B301BFB8AA300A909E3 /* skull2.gif */; settings = {ASSET_TAGS = (); }; };
+		AA112B341BFB8C7100A909E3 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA112B331BFB8C7100A909E3 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		AADA4F181BFA451100967E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA4F171BFA451100967E6A /* main.m */; };
 		AADA4F1B1BFA451100967E6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA4F1A1BFA451100967E6A /* AppDelegate.m */; };
 		AADA4F1E1BFA451100967E6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA4F1D1BFA451100967E6A /* ViewController.m */; };
@@ -17,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA112B2E1BFB82D900A909E3 /* skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skull.png; sourceTree = "<group>"; };
+		AA112B301BFB8AA300A909E3 /* skull2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = skull2.gif; sourceTree = "<group>"; };
+		AA112B321BFB8C7100A909E3 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		AA112B331BFB8C7100A909E3 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		AADA4F131BFA451100967E6A /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADA4F171BFA451100967E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AADA4F191BFA451100967E6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +71,8 @@
 				AADA4F1A1BFA451100967E6A /* AppDelegate.m */,
 				AADA4F1C1BFA451100967E6A /* ViewController.h */,
 				AADA4F1D1BFA451100967E6A /* ViewController.m */,
+				AA112B321BFB8C7100A909E3 /* WebViewController.h */,
+				AA112B331BFB8C7100A909E3 /* WebViewController.m */,
 				AADA4F1F1BFA451100967E6A /* Main.storyboard */,
 				AADA4F221BFA451100967E6A /* Assets.xcassets */,
 				AADA4F241BFA451100967E6A /* LaunchScreen.storyboard */,
@@ -76,6 +85,8 @@
 		AADA4F161BFA451100967E6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA112B2E1BFB82D900A909E3 /* skull.png */,
+				AA112B301BFB8AA300A909E3 /* skull2.gif */,
 				AADA4F2D1BFA650D00967E6A /* logo.png */,
 				AADA4F171BFA451100967E6A /* main.m */,
 			);
@@ -140,8 +151,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA112B311BFB8AA300A909E3 /* skull2.gif in Resources */,
 				AADA4F2E1BFA650D00967E6A /* logo.png in Resources */,
 				AADA4F261BFA451100967E6A /* LaunchScreen.storyboard in Resources */,
+				AA112B2F1BFB82D900A909E3 /* skull.png in Resources */,
 				AADA4F231BFA451100967E6A /* Assets.xcassets in Resources */,
 				AADA4F211BFA451100967E6A /* Main.storyboard in Resources */,
 			);
@@ -157,6 +170,7 @@
 				AADA4F1E1BFA451100967E6A /* ViewController.m in Sources */,
 				AADA4F1B1BFA451100967E6A /* AppDelegate.m in Sources */,
 				AADA4F181BFA451100967E6A /* main.m in Sources */,
+				AA112B341BFB8C7100A909E3 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +319,7 @@
 				AADA4F2C1BFA451100967E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
